@@ -32,13 +32,10 @@ public class AgendaEventos {
                 proximoEvento= entry.getValue();
                 System.out.println("O próximo evento: "+ proximoEvento + " acontecerá na data " + proximaData);
                 break;
-            }
-            
+            }  
         }
-
     }
     public static void main(String[] args) {
         AgendaEventos agendaEventos = new AgendaEventos();
     }
-    
 }

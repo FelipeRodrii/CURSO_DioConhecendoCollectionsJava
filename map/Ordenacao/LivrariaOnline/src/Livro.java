@@ -1,0 +1,40 @@
+import java.util.Comparator;
+
+public class Livro implements Comparator<Livro>{
+    //Atributos
+    private String titulo;
+    private String autor;
+    private double preco;
+
+    //Métodos
+    public Livro(String titulo, String autor, double preco) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.preco = preco;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    @Override
+    public String toString() {
+        return "Livro [titulo=" + titulo +
+         ", autor=" + autor +
+          ", preco=" + preco + "]";
+    }
+
+    @Override
+    public int compare(Livro l1, Livro l2) {
+        return Double.compare(l1.getPreco(), l2.getPreco());
+    }
+}
+
